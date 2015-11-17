@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE2416F1BFB7A85003E9442 /* scene1.test in Resources */ = {isa = PBXBuildFile; fileRef = 3FE2416E1BFB7A85003E9442 /* scene1.test */; };
+		68384B291AB9A70C00B22C7D /* libTrayRacer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683844A91AB9A69400B22C7D /* libTrayRacer.a */; };
+		68428D171AB4495500D36B4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68428D161AB4495500D36B4F /* AppDelegate.swift */; };
+		68428D191AB4495500D36B4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68428D181AB4495500D36B4F /* ViewController.swift */; };
+		68428D1B1AB4495500D36B4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68428D1A1AB4495500D36B4F /* Images.xcassets */; };
+		68428D1E1AB4495500D36B4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68428D1C1AB4495500D36B4F /* Main.storyboard */; };
+		68428D2A1AB4495500D36B4F /* SwiftTrayRacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68428D291AB4495500D36B4F /* SwiftTrayRacerTests.swift */; };
+		68428D361AB44C8500D36B4F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68428D351AB44C8500D36B4F /* Cocoa.framework */; };
+		68428D4A1AB4612D00D36B4F /* TrayRacerWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68428D441AB451C000D36B4F /* TrayRacerWrapper.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FBDD53F1BCB723F00748BB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683844A41AB9A69400B22C7D /* TrayRacer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 683852C51ABD867B00B22C7D;
+			remoteInfo = TrayRacerTests;
+		};
+		3FBDD5411BCB723F00748BB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683844A41AB9A69400B22C7D /* TrayRacer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 683852F41ABEE79800B22C7D;
+			remoteInfo = TrayRacerApp;
+		};
+		683844A81AB9A69400B22C7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683844A41AB9A69400B22C7D /* TrayRacer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 683DCE8F19C7360A005A954F;
+			remoteInfo = TrayRacer;
+		};
+		68384B271AB9A6FB00B22C7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683844A41AB9A69400B22C7D /* TrayRacer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 683DCE8E19C7360A005A954F;
+			remoteInfo = TrayRacer;
+		};
+		68428D241AB4495500D36B4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68428D091AB4495500D36B4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68428D101AB4495500D36B4F;
+			remoteInfo = SwiftTrayRacer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FE2416E1BFB7A85003E9442 /* scene1.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene1.test; sourceTree = "<group>"; };
+		683844A41AB9A69400B22C7D /* TrayRacer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TrayRacer.xcodeproj; path = ../TrayRacer/TrayRacer.xcodeproj; sourceTree = "<group>"; };
+		68428D111AB4495500D36B4F /* SwiftTrayRacer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTrayRacer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68428D151AB4495500D36B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68428D161AB4495500D36B4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68428D181AB4495500D36B4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68428D1A1AB4495500D36B4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		68428D1D1AB4495500D36B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68428D231AB4495500D36B4F /* SwiftTrayRacerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTrayRacerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68428D281AB4495500D36B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68428D291AB4495500D36B4F /* SwiftTrayRacerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTrayRacerTests.swift; sourceTree = "<group>"; };
+		68428D351AB44C8500D36B4F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		68428D371AB44C8800D36B4F /* libTrayRacer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTrayRacer.a; path = "../../../../Library/Developer/Xcode/DerivedData/TrayRacer-fezjudkhnspnvcagnrxlzeaaqmqa/Build/Products/Debug/libTrayRacer.a"; sourceTree = "<group>"; };
+		68428D431AB451BF00D36B4F /* SwiftTrayRacer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTrayRacer-Bridging-Header.h"; sourceTree = "<group>"; };
+		68428D441AB451C000D36B4F /* TrayRacerWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrayRacerWrapper.cpp; path = SwiftTrayRacer/TrayRacerWrapper.cpp; sourceTree = "<group>"; };
+		68428D451AB451C000D36B4F /* TrayRacerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrayRacerWrapper.h; path = SwiftTrayRacer/TrayRacerWrapper.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68428D0E1AB4495500D36B4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68384B291AB9A70C00B22C7D /* libTrayRacer.a in Frameworks */,
+				68428D361AB44C8500D36B4F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68428D201AB4495500D36B4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		683844381AB99E7D00B22C7D /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				3FE2416E1BFB7A85003E9442 /* scene1.test */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		683844A51AB9A69400B22C7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				683844A91AB9A69400B22C7D /* libTrayRacer.a */,
+				3FBDD5401BCB723F00748BB8 /* TrayRacerTests */,
+				3FBDD5421BCB723F00748BB8 /* TrayRacerApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68428D081AB4495500D36B4F = {
+			isa = PBXGroup;
+			children = (
+				68428D421AB4518000D36B4F /* Source */,
+				68428D131AB4495500D36B4F /* SwiftTrayRacer */,
+				68428D261AB4495500D36B4F /* SwiftTrayRacerTests */,
+				68428D391AB44E3900D36B4F /* Frameworks */,
+				68428D121AB4495500D36B4F /* Products */,
+				683844381AB99E7D00B22C7D /* assets */,
+			);
+			sourceTree = "<group>";
+		};
+		68428D121AB4495500D36B4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68428D111AB4495500D36B4F /* SwiftTrayRacer.app */,
+				68428D231AB4495500D36B4F /* SwiftTrayRacerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68428D131AB4495500D36B4F /* SwiftTrayRacer */ = {
+			isa = PBXGroup;
+			children = (
+				68428D161AB4495500D36B4F /* AppDelegate.swift */,
+				68428D181AB4495500D36B4F /* ViewController.swift */,
+				68428D1A1AB4495500D36B4F /* Images.xcassets */,
+				68428D1C1AB4495500D36B4F /* Main.storyboard */,
+				68428D141AB4495500D36B4F /* Supporting Files */,
+			);
+			path = SwiftTrayRacer;
+			sourceTree = "<group>";
+		};
+		68428D141AB4495500D36B4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68428D151AB4495500D36B4F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68428D261AB4495500D36B4F /* SwiftTrayRacerTests */ = {
+			isa = PBXGroup;
+			children = (
+				68428D291AB4495500D36B4F /* SwiftTrayRacerTests.swift */,
+				68428D271AB4495500D36B4F /* Supporting Files */,
+			);
+			path = SwiftTrayRacerTests;
+			sourceTree = "<group>";
+		};
+		68428D271AB4495500D36B4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68428D281AB4495500D36B4F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68428D391AB44E3900D36B4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				683844A41AB9A69400B22C7D /* TrayRacer.xcodeproj */,
+				68428D371AB44C8800D36B4F /* libTrayRacer.a */,
+				68428D351AB44C8500D36B4F /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68428D421AB4518000D36B4F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				68428D441AB451C000D36B4F /* TrayRacerWrapper.cpp */,
+				68428D451AB451C000D36B4F /* TrayRacerWrapper.h */,
+				68428D431AB451BF00D36B4F /* SwiftTrayRacer-Bridging-Header.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68428D101AB4495500D36B4F /* SwiftTrayRacer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68428D2D1AB4495500D36B4F /* Build configuration list for PBXNativeTarget "SwiftTrayRacer" */;
+			buildPhases = (
+				68428D0D1AB4495500D36B4F /* Sources */,
+				68428D0E1AB4495500D36B4F /* Frameworks */,
+				68428D0F1AB4495500D36B4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68384B281AB9A6FB00B22C7D /* PBXTargetDependency */,
+			);
+			name = SwiftTrayRacer;
+			productName = SwiftTrayRacer;
+			productReference = 68428D111AB4495500D36B4F /* SwiftTrayRacer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68428D221AB4495500D36B4F /* SwiftTrayRacerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68428D301AB4495500D36B4F /* Build configuration list for PBXNativeTarget "SwiftTrayRacerTests" */;
+			buildPhases = (
+				68428D1F1AB4495500D36B4F /* Sources */,
+				68428D201AB4495500D36B4F /* Frameworks */,
+				68428D211AB4495500D36B4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68428D251AB4495500D36B4F /* PBXTargetDependency */,
+			);
+			name = SwiftTrayRacerTests;
+			productName = SwiftTrayRacerTests;
+			productReference = 68428D231AB4495500D36B4F /* SwiftTrayRacerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68428D091AB4495500D36B4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Magnus Strandh";
+				TargetAttributes = {
+					68428D101AB4495500D36B4F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					68428D221AB4495500D36B4F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 68428D101AB4495500D36B4F;
+					};
+				};
+			};
+			buildConfigurationList = 68428D0C1AB4495500D36B4F /* Build configuration list for PBXProject "SwiftTrayRacer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68428D081AB4495500D36B4F;
+			productRefGroup = 68428D121AB4495500D36B4F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 683844A51AB9A69400B22C7D /* Products */;
+					ProjectRef = 683844A41AB9A69400B22C7D /* TrayRacer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				68428D101AB4495500D36B4F /* SwiftTrayRacer */,
+				68428D221AB4495500D36B4F /* SwiftTrayRacerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3FBDD5401BCB723F00748BB8 /* TrayRacerTests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = TrayRacerTests;
+			remoteRef = 3FBDD53F1BCB723F00748BB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3FBDD5421BCB723F00748BB8 /* TrayRacerApp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = TrayRacerApp;
+			remoteRef = 3FBDD5411BCB723F00748BB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		683844A91AB9A69400B22C7D /* libTrayRacer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTrayRacer.a;
+			remoteRef = 683844A81AB9A69400B22C7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68428D0F1AB4495500D36B4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68428D1B1AB4495500D36B4F /* Images.xcassets in Resources */,
+				68428D1E1AB4495500D36B4F /* Main.storyboard in Resources */,
+				3FE2416F1BFB7A85003E9442 /* scene1.test in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68428D211AB4495500D36B4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68428D0D1AB4495500D36B4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68428D191AB4495500D36B4F /* ViewController.swift in Sources */,
+				68428D171AB4495500D36B4F /* AppDelegate.swift in Sources */,
+				68428D4A1AB4612D00D36B4F /* TrayRacerWrapper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68428D1F1AB4495500D36B4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68428D2A1AB4495500D36B4F /* SwiftTrayRacerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68384B281AB9A6FB00B22C7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TrayRacer;
+			targetProxy = 68384B271AB9A6FB00B22C7D /* PBXContainerItemProxy */;
+		};
+		68428D251AB4495500D36B4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68428D101AB4495500D36B4F /* SwiftTrayRacer */;
+			targetProxy = 68428D241AB4495500D36B4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68428D1C1AB4495500D36B4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68428D1D1AB4495500D36B4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68428D2B1AB4495500D36B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "../**";
+			};
+			name = Debug;
+		};
+		68428D2C1AB4495500D36B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../**";
+			};
+			name = Release;
+		};
+		68428D2E1AB4495500D36B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftTrayRacer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/TrayRacer-fezjudkhnspnvcagnrxlzeaaqmqa/Build/Products/Debug",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pixelmath.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTrayRacer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68428D2F1AB4495500D36B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftTrayRacer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/TrayRacer-fezjudkhnspnvcagnrxlzeaaqmqa/Build/Products/Debug",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pixelmath.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTrayRacer-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		68428D311AB4495500D36B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftTrayRacerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pixelmath.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTrayRacer.app/Contents/MacOS/SwiftTrayRacer";
+			};
+			name = Debug;
+		};
+		68428D321AB4495500D36B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftTrayRacerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pixelmath.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTrayRacer.app/Contents/MacOS/SwiftTrayRacer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68428D0C1AB4495500D36B4F /* Build configuration list for PBXProject "SwiftTrayRacer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68428D2B1AB4495500D36B4F /* Debug */,
+				68428D2C1AB4495500D36B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68428D2D1AB4495500D36B4F /* Build configuration list for PBXNativeTarget "SwiftTrayRacer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68428D2E1AB4495500D36B4F /* Debug */,
+				68428D2F1AB4495500D36B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68428D301AB4495500D36B4F /* Build configuration list for PBXNativeTarget "SwiftTrayRacerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68428D311AB4495500D36B4F /* Debug */,
+				68428D321AB4495500D36B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68428D091AB4495500D36B4F /* Project object */;
+}
