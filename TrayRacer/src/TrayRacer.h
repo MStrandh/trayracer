@@ -17,15 +17,12 @@
 class TrayRacer {
     
 private:
-    int m_Width;
-    int m_Height;
-    
-    Film *film;
+    std::shared_ptr<Film> mFilm;
 
     int maxRecursionDepth;
         
 public:
-    TrayRacer();
+	TrayRacer(std::shared_ptr<Film> film);
     virtual ~TrayRacer();
     
     void setup(const char* filePath);

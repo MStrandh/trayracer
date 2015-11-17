@@ -10,8 +10,10 @@
 
 using namespace std;
 
-TrayRacer::TrayRacer() : m_Width(320), m_Height(240) {
+TrayRacer::TrayRacer(shared_ptr<Film> film) {
     std::cout << "TrayRacer v.0.0.1" << std::endl;
+	
+	mFilm = film;
 }
 
 TrayRacer::~TrayRacer() {
@@ -20,12 +22,11 @@ TrayRacer::~TrayRacer() {
 
 void TrayRacer::setup(const char* filePath)
 {
-    film = new Film(m_Width, m_Height);
 }
 
 uint8_t* TrayRacer::render()
 {
-    Sampler* sampler = new Sampler(film->getWidth(), film->getHeight());
+    Sampler* sampler = new Sampler(mFilm->getWidth(), mFilm->getHeight());
     
     Sample sample = Sample();
     Color color = Color();
@@ -33,19 +34,19 @@ uint8_t* TrayRacer::render()
     while (sampler->hasMoreSamples())
     {
         sample = sampler->getSample();
-        film->writeColor(sample, color);
+        mFilm->writeColor(sample, color);
     }
     
-    return film->getData();
+    return mFilm->getData();
 }
 
 int TrayRacer::width()
 {
-    return m_Width;
+    return mFilm->getWidth();
 }
 
 int TrayRacer::height()
 {
-    return m_Height;
+    return mFilm->getHeight();
 }
 

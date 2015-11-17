@@ -8,11 +8,13 @@
 
 #include "TrayRacerWrapper.h"
 #include "TrayRacer.h"
+#include "Film.h"
 
 TrayRacer* racer;
 
 void createTrayRacer(const char* fileData) {
-    racer = new TrayRacer();
+	std::shared_ptr<Film> film(new Film(320, 240));
+    racer = new TrayRacer(film);
     racer->setup(fileData);
 }
 
