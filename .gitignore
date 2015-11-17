@@ -22,3 +22,6 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscheme
+
+## Misc
+.DS_Store
