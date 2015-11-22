@@ -17,11 +17,6 @@ TrayRacer::TrayRacer(shared_ptr<Film> film) {
 }
 
 TrayRacer::~TrayRacer() {
-    
-}
-
-void TrayRacer::setup(const char* filePath)
-{
 }
 
 uint8_t* TrayRacer::render()

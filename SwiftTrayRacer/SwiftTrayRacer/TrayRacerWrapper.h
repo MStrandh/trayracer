@@ -13,9 +13,8 @@
 extern "C" {
 #endif
 
-    void createTrayRacer(const char* fileData);
+    void createTrayRacer(const char* filePath);
     const unsigned char* getTrayRacerImage();
-    void destroyTrayRacer();
     
 #ifdef __cplusplus
 }

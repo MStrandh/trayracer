@@ -15,13 +15,11 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let filePath = getPathForFileInBundle("scene1")
+		let filePath = getPathForFileInBundle("scene1")
         createTrayRacer(filePath)
 
         let image = createImage(320, imageHeight: 240)
         trayRacerImageView?.image = image
-        
-        destroyTrayRacer()
     }
 
     override var representedObject: AnyObject? {

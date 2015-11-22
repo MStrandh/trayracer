@@ -25,7 +25,6 @@ public:
 	TrayRacer(std::shared_ptr<Film> film);
     virtual ~TrayRacer();
     
-    void setup(const char* filePath);
     uint8_t* render();
     int width();
     int height();
