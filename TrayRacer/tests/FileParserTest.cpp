@@ -7,5 +7,3 @@
 //
 
 #include "FileParserTest.h"
-
-#include "catch.hpp"

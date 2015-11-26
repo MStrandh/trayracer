@@ -12,9 +12,11 @@
 #include <iostream>
 #include <fstream>
 
+#include "ISceneConfigurationFile.h"
+
 using namespace std;
 
-class SceneConfigurationFile {
+class SceneConfigurationFile : public ISceneConfigurationFile {
 private:
 	ifstream inputStream;
 	string outputString;
@@ -23,8 +25,8 @@ public:
 	SceneConfigurationFile(const char* filePath);
 	virtual ~SceneConfigurationFile();
 	
-	bool isEmpty();
-	string readLine();
+	bool isEmpty() override;
+	string readLine() override;
 };
 
 #endif /* SceneConfigurationFile_h */

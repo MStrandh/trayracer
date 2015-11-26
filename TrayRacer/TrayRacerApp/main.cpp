@@ -16,9 +16,10 @@ int main(int argc, const char * argv[]) {
     
     std::cout << argv[0] << std::endl;
     std::cout << filePath << std::endl;
-    
-    TrayRacer* racer = new TrayRacer();
-    racer->setup(filePath.c_str());
+	
+	std::shared_ptr<Film> film(new Film(320, 240));
+	
+    TrayRacer* racer = new TrayRacer(film);
     racer->render();
     
     return 0;
