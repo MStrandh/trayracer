@@ -158,8 +158,7 @@
 		683852BA1ABD858900B22C7D /* vec3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6838522A1ABD858900B22C7D /* vec3.hpp */; };
 		683852BB1ABD858900B22C7D /* vec4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6838522B1ABD858900B22C7D /* vec4.hpp */; };
 		683852BC1ABD858900B22C7D /* vector_relational.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6838522C1ABD858900B22C7D /* vector_relational.hpp */; };
-		683852C01ABD866A00B22C7D /* FileParserTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 683852BE1ABD866A00B22C7D /* FileParserTest.h */; };
-		683852CC1ABD86B700B22C7D /* FileParserTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 683852BD1ABD866A00B22C7D /* FileParserTest.cpp */; };
+		683852CC1ABD86B700B22C7D /* SceneParserTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 683852BD1ABD866A00B22C7D /* SceneParserTest.cpp */; };
 		683852CD1ABD870500B22C7D /* TrayRacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 683DCEF819C7823F005A954F /* TrayRacer.cpp */; };
 		683852D11ABD870500B22C7D /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6838446C1AB9A26100B22C7D /* Color.cpp */; };
 		683852D51ABD870500B22C7D /* Film.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 683844701AB9A26100B22C7D /* Film.cpp */; };
@@ -172,18 +171,18 @@
 		683853041ABEE7E600B22C7D /* Sampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6838447B1AB9A26100B22C7D /* Sampler.cpp */; };
 		683DCEFA19C7823F005A954F /* TrayRacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 683DCEF819C7823F005A954F /* TrayRacer.cpp */; };
 		683DCEFB19C7823F005A954F /* TrayRacer.h in Headers */ = {isa = PBXBuildFile; fileRef = 683DCEF919C7823F005A954F /* TrayRacer.h */; };
-		687C832B1BFC8D5500B83FC9 /* CustomSceneParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83291BFC8D5500B83FC9 /* CustomSceneParser.cpp */; };
-		687C832C1BFC8D5500B83FC9 /* CustomSceneParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83291BFC8D5500B83FC9 /* CustomSceneParser.cpp */; };
-		687C832D1BFC8D5500B83FC9 /* CustomSceneParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83291BFC8D5500B83FC9 /* CustomSceneParser.cpp */; };
-		687C832E1BFC8D5500B83FC9 /* CustomSceneParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 687C832A1BFC8D5500B83FC9 /* CustomSceneParser.h */; };
+		687C832B1BFC8D5500B83FC9 /* SceneParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83291BFC8D5500B83FC9 /* SceneParser.cpp */; };
+		687C832C1BFC8D5500B83FC9 /* SceneParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83291BFC8D5500B83FC9 /* SceneParser.cpp */; };
+		687C832D1BFC8D5500B83FC9 /* SceneParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83291BFC8D5500B83FC9 /* SceneParser.cpp */; };
 		687C83311BFC912900B83FC9 /* SceneConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C832F1BFC912900B83FC9 /* SceneConfiguration.cpp */; };
 		687C83321BFC912900B83FC9 /* SceneConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C832F1BFC912900B83FC9 /* SceneConfiguration.cpp */; };
 		687C83331BFC912900B83FC9 /* SceneConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C832F1BFC912900B83FC9 /* SceneConfiguration.cpp */; };
 		687C83341BFC912900B83FC9 /* SceneConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 687C83301BFC912900B83FC9 /* SceneConfiguration.h */; };
-		687C83381BFCA84B00B83FC9 /* SceneConfigurationFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83361BFCA84B00B83FC9 /* SceneConfigurationFile.cpp */; };
-		687C83391BFCA84B00B83FC9 /* SceneConfigurationFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83361BFCA84B00B83FC9 /* SceneConfigurationFile.cpp */; };
-		687C833A1BFCA84B00B83FC9 /* SceneConfigurationFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83361BFCA84B00B83FC9 /* SceneConfigurationFile.cpp */; };
-		687C833B1BFCA84B00B83FC9 /* SceneConfigurationFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 687C83371BFCA84B00B83FC9 /* SceneConfigurationFile.h */; };
+		687C83381BFCA84B00B83FC9 /* SceneFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83361BFCA84B00B83FC9 /* SceneFile.cpp */; };
+		687C83391BFCA84B00B83FC9 /* SceneFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83361BFCA84B00B83FC9 /* SceneFile.cpp */; };
+		687C833A1BFCA84B00B83FC9 /* SceneFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83361BFCA84B00B83FC9 /* SceneFile.cpp */; };
+		687C833B1BFCA84B00B83FC9 /* SceneFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 687C83371BFCA84B00B83FC9 /* SceneFile.h */; };
+		687C835B1C076B7800B83FC9 /* ISceneFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 687C835A1C076B7800B83FC9 /* ISceneFile.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -469,8 +468,7 @@
 		6838522A1ABD858900B22C7D /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
 		6838522B1ABD858900B22C7D /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
 		6838522C1ABD858900B22C7D /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
-		683852BD1ABD866A00B22C7D /* FileParserTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileParserTest.cpp; sourceTree = "<group>"; };
-		683852BE1ABD866A00B22C7D /* FileParserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileParserTest.h; sourceTree = "<group>"; };
+		683852BD1ABD866A00B22C7D /* SceneParserTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneParserTest.cpp; sourceTree = "<group>"; };
 		683852C51ABD867B00B22C7D /* TrayRacerTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TrayRacerTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		683852EC1ABD876700B22C7D /* TrayRacersTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrayRacersTests.cpp; sourceTree = "<group>"; };
 		683852F41ABEE79800B22C7D /* TrayRacerApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TrayRacerApp; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -478,12 +476,14 @@
 		683DCE8F19C7360A005A954F /* libTrayRacer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrayRacer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		683DCEF819C7823F005A954F /* TrayRacer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrayRacer.cpp; sourceTree = "<group>"; };
 		683DCEF919C7823F005A954F /* TrayRacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrayRacer.h; sourceTree = "<group>"; };
-		687C83291BFC8D5500B83FC9 /* CustomSceneParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomSceneParser.cpp; sourceTree = "<group>"; };
-		687C832A1BFC8D5500B83FC9 /* CustomSceneParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSceneParser.h; sourceTree = "<group>"; };
+		687C83291BFC8D5500B83FC9 /* SceneParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneParser.cpp; sourceTree = "<group>"; };
+		687C832A1BFC8D5500B83FC9 /* SceneParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneParser.h; sourceTree = "<group>"; };
 		687C832F1BFC912900B83FC9 /* SceneConfiguration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneConfiguration.cpp; sourceTree = "<group>"; };
 		687C83301BFC912900B83FC9 /* SceneConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneConfiguration.h; sourceTree = "<group>"; };
-		687C83361BFCA84B00B83FC9 /* SceneConfigurationFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneConfigurationFile.cpp; sourceTree = "<group>"; };
-		687C83371BFCA84B00B83FC9 /* SceneConfigurationFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneConfigurationFile.h; sourceTree = "<group>"; };
+		687C83361BFCA84B00B83FC9 /* SceneFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneFile.cpp; sourceTree = "<group>"; };
+		687C83371BFCA84B00B83FC9 /* SceneFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFile.h; sourceTree = "<group>"; };
+		687C835A1C076B7800B83FC9 /* ISceneFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISceneFile.h; sourceTree = "<group>"; };
+		687C835C1C0B6C2600B83FC9 /* fakeit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fakeit.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -523,8 +523,7 @@
 		6838512A1ABD808800B22C7D /* tests */ = {
 			isa = PBXGroup;
 			children = (
-				683852BD1ABD866A00B22C7D /* FileParserTest.cpp */,
-				683852BE1ABD866A00B22C7D /* FileParserTest.h */,
+				683852BD1ABD866A00B22C7D /* SceneParserTest.cpp */,
 				683852EC1ABD876700B22C7D /* TrayRacersTests.cpp */,
 			);
 			path = tests;
@@ -534,6 +533,7 @@
 			isa = PBXGroup;
 			children = (
 				6838512C1ABD858800B22C7D /* catch.hpp */,
+				687C835C1C0B6C2600B83FC9 /* fakeit.hpp */,
 			);
 			path = catch;
 			sourceTree = "<group>";
@@ -866,17 +866,18 @@
 				683DCEF919C7823F005A954F /* TrayRacer.h */,
 				6838446C1AB9A26100B22C7D /* Color.cpp */,
 				6838446D1AB9A26100B22C7D /* Color.h */,
-				687C83291BFC8D5500B83FC9 /* CustomSceneParser.cpp */,
-				687C832A1BFC8D5500B83FC9 /* CustomSceneParser.h */,
 				683844701AB9A26100B22C7D /* Film.cpp */,
 				683844711AB9A26100B22C7D /* Film.h */,
+				687C835A1C076B7800B83FC9 /* ISceneFile.h */,
 				6838447A1AB9A26100B22C7D /* Sample.h */,
 				6838447B1AB9A26100B22C7D /* Sampler.cpp */,
 				6838447C1AB9A26100B22C7D /* Sampler.h */,
 				687C832F1BFC912900B83FC9 /* SceneConfiguration.cpp */,
 				687C83301BFC912900B83FC9 /* SceneConfiguration.h */,
-				687C83361BFCA84B00B83FC9 /* SceneConfigurationFile.cpp */,
-				687C83371BFCA84B00B83FC9 /* SceneConfigurationFile.h */,
+				687C83361BFCA84B00B83FC9 /* SceneFile.cpp */,
+				687C83371BFCA84B00B83FC9 /* SceneFile.h */,
+				687C83291BFC8D5500B83FC9 /* SceneParser.cpp */,
+				687C832A1BFC8D5500B83FC9 /* SceneParser.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -908,6 +909,7 @@
 				683852A81ABD858900B22C7D /* type_aligned.hpp in Headers */,
 				6838529F1ABD858900B22C7D /* scalar_relational.hpp in Headers */,
 				6838522E1ABD858900B22C7D /* common.hpp in Headers */,
+				687C835B1C076B7800B83FC9 /* ISceneFile.h in Headers */,
 				6838529C1ABD858900B22C7D /* rotate_normalized_axis.hpp in Headers */,
 				683852371ABD858900B22C7D /* func_geometric.hpp in Headers */,
 				683852801ABD858900B22C7D /* fast_trigonometry.hpp in Headers */,
@@ -959,7 +961,6 @@
 				683852331ABD858900B22C7D /* _swizzle_func.hpp in Headers */,
 				683852551ABD858900B22C7D /* type_mat4x4.hpp in Headers */,
 				6838528B1ABD858900B22C7D /* matrix_operation.hpp in Headers */,
-				687C832E1BFC8D5500B83FC9 /* CustomSceneParser.h in Headers */,
 				683852AA1ABD858900B22C7D /* vector_query.hpp in Headers */,
 				683852631ABD858900B22C7D /* integer.hpp in Headers */,
 				683852841ABD858900B22C7D /* intersect.hpp in Headers */,
@@ -974,7 +975,7 @@
 				6838523B1ABD858900B22C7D /* func_packing.hpp in Headers */,
 				683852671ABD858900B22C7D /* matrix_transform.hpp in Headers */,
 				683DCEFB19C7823F005A954F /* TrayRacer.h in Headers */,
-				687C833B1BFCA84B00B83FC9 /* SceneConfigurationFile.h in Headers */,
+				687C833B1BFCA84B00B83FC9 /* SceneFile.h in Headers */,
 				683852771ABD858900B22C7D /* common.hpp in Headers */,
 				683852351ABD858900B22C7D /* func_common.hpp in Headers */,
 				6838527B1ABD858900B22C7D /* euler_angles.hpp in Headers */,
@@ -1028,7 +1029,6 @@
 				6838523F1ABD858900B22C7D /* intrinsic_common.hpp in Headers */,
 				6838528C1ABD858900B22C7D /* matrix_query.hpp in Headers */,
 				683852341ABD858900B22C7D /* _vectorize.hpp in Headers */,
-				683852C01ABD866A00B22C7D /* FileParserTest.h in Headers */,
 				683852781ABD858900B22C7D /* compatibility.hpp in Headers */,
 				683852651ABD858900B22C7D /* matrix_integer.hpp in Headers */,
 				6838526A1ABD858900B22C7D /* quaternion.hpp in Headers */,
@@ -1141,13 +1141,13 @@
 			files = (
 				687C83321BFC912900B83FC9 /* SceneConfiguration.cpp in Sources */,
 				683852CD1ABD870500B22C7D /* TrayRacer.cpp in Sources */,
-				687C832C1BFC8D5500B83FC9 /* CustomSceneParser.cpp in Sources */,
+				687C832C1BFC8D5500B83FC9 /* SceneParser.cpp in Sources */,
 				683852D11ABD870500B22C7D /* Color.cpp in Sources */,
-				687C83391BFCA84B00B83FC9 /* SceneConfigurationFile.cpp in Sources */,
+				687C83391BFCA84B00B83FC9 /* SceneFile.cpp in Sources */,
 				683852ED1ABD876700B22C7D /* TrayRacersTests.cpp in Sources */,
 				683852D51ABD870500B22C7D /* Film.cpp in Sources */,
 				683852E01ABD870500B22C7D /* Sampler.cpp in Sources */,
-				683852CC1ABD86B700B22C7D /* FileParserTest.cpp in Sources */,
+				683852CC1ABD86B700B22C7D /* SceneParserTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,10 +1156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				683852FB1ABEE7E600B22C7D /* TrayRacer.cpp in Sources */,
-				687C833A1BFCA84B00B83FC9 /* SceneConfigurationFile.cpp in Sources */,
+				687C833A1BFCA84B00B83FC9 /* SceneFile.cpp in Sources */,
 				687C83331BFC912900B83FC9 /* SceneConfiguration.cpp in Sources */,
 				683852FD1ABEE7E600B22C7D /* Color.cpp in Sources */,
-				687C832D1BFC8D5500B83FC9 /* CustomSceneParser.cpp in Sources */,
+				687C832D1BFC8D5500B83FC9 /* SceneParser.cpp in Sources */,
 				683852FF1ABEE7E600B22C7D /* Film.cpp in Sources */,
 				683853041ABEE7E600B22C7D /* Sampler.cpp in Sources */,
 				683852F71ABEE79800B22C7D /* main.cpp in Sources */,
@@ -1171,10 +1171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				683844891AB9A26100B22C7D /* Color.cpp in Sources */,
-				687C83381BFCA84B00B83FC9 /* SceneConfigurationFile.cpp in Sources */,
+				687C83381BFCA84B00B83FC9 /* SceneFile.cpp in Sources */,
 				687C83311BFC912900B83FC9 /* SceneConfiguration.cpp in Sources */,
 				6838523E1ABD858900B22C7D /* glm.cpp in Sources */,
-				687C832B1BFC8D5500B83FC9 /* CustomSceneParser.cpp in Sources */,
+				687C832B1BFC8D5500B83FC9 /* SceneParser.cpp in Sources */,
 				683DCEFA19C7823F005A954F /* TrayRacer.cpp in Sources */,
 				683844981AB9A26100B22C7D /* Sampler.cpp in Sources */,
 				6838448D1AB9A26100B22C7D /* Film.cpp in Sources */,

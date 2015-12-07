@@ -10,10 +10,10 @@
 
 using namespace std;
 
-TrayRacer::TrayRacer(shared_ptr<Film> film) {
+TrayRacer::TrayRacer(Film* film)
+	: mFilm(film)
+{
     std::cout << "TrayRacer v.0.0.1" << std::endl;
-	
-	mFilm = film;
 }
 
 TrayRacer::~TrayRacer() {
@@ -35,12 +35,12 @@ uint8_t* TrayRacer::render()
     return mFilm->getData();
 }
 
-int TrayRacer::width()
+int TrayRacer::width() const
 {
     return mFilm->getWidth();
 }
 
-int TrayRacer::height()
+int TrayRacer::height() const
 {
     return mFilm->getHeight();
 }

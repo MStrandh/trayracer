@@ -28,10 +28,10 @@ public:
     
     void writeColor(const Sample& sample, const Color& color);
     
-    int getWidth();
-    int getHeight();
+    int getWidth() const;
+    int getHeight() const;
     
-    uint8_t* getData();
+    uint8_t* getData() const;
 };
 
 #endif /* defined(__TrayRacer__Film__) */

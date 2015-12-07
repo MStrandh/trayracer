@@ -21,6 +21,11 @@ private:
     float clamp(float val);
     
 public:
+	Color();
+	Color(float red, float green, float blue);
+	
+	virtual ~Color();
+	
     Color operator+ (Color clr);
     Color operator* (float val);
     Color operator* (Color clr);
@@ -40,11 +45,6 @@ public:
     float getBlue() const;
     
     void printColor();
-    
-    Color();
-    Color(float red, float green, float blue);
-    
-    virtual ~Color();
 };
 
 #endif /* defined(__TrayRacer__Color__) */

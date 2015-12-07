@@ -10,6 +10,21 @@
 
 #include <algorithm>
 
+Color::Color() : Color(0.0f, 0.0f, 0.0f)
+{
+	
+}
+
+Color::Color(float red, float green, float blue)
+{
+	setRGB(red, green, blue);
+}
+
+Color::~Color()
+{
+	
+}
+
 float Color::clamp(float val)
 {
     return std::max(std::min(val, 1.0f), 0.0f);
@@ -110,19 +125,4 @@ float Color::getBlue() const
 
 void Color::printColor() {
     printf("Color: [%f, %f, %f]\n", r, g, b);
-}
-
-Color::Color() : Color(0.0f, 0.0f, 0.0f)
-{
-    
-}
-
-Color::Color(float red, float green, float blue)
-{
-    setRGB(red, green, blue);
-}
-
-Color::~Color()
-{
-    
 }

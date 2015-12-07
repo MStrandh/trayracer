@@ -17,10 +17,13 @@ int main(int argc, const char * argv[]) {
     std::cout << argv[0] << std::endl;
     std::cout << filePath << std::endl;
 	
-	std::shared_ptr<Film> film(new Film(320, 240));
-	
+	Film* film = new Film(320, 240);
     TrayRacer* racer = new TrayRacer(film);
+	
     racer->render();
+	
+	delete film;
+	delete racer;
     
     return 0;
 }

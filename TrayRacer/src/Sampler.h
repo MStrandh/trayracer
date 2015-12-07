@@ -23,14 +23,16 @@ private:
     int *samples;
     
 public:
+	Sampler(int w, int h);
+	virtual ~Sampler();
+	
     Sample getSample();
     bool hasMoreSamples();
     
     int getProcessedCount();
     int getTotalCount();
     
-    Sampler(int w, int h);
-    virtual ~Sampler();
+	
 };
 
 #endif /* defined(__TrayRacer__Sampler__) */

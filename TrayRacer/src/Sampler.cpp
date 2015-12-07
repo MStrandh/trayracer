@@ -8,6 +8,20 @@
 
 #include "Sampler.h"
 
+Sampler::Sampler(int w, int h)
+{
+	scanlineWidth = w;
+	totalSamples = w * h;
+	currentSample = 0;
+	
+	samples = new int[totalSamples];
+}
+
+Sampler::~Sampler()
+{
+	
+}
+
 Sample Sampler::getSample()
 {
     int col = currentSample % scanlineWidth;
@@ -35,18 +49,4 @@ int Sampler::getProcessedCount()
 int Sampler::getTotalCount()
 {
     return totalSamples;
-}
-
-Sampler::Sampler(int w, int h)
-{
-    scanlineWidth = w;
-    totalSamples = w * h;
-    currentSample = 0;
-    
-    samples = new int[totalSamples];
-}
-
-Sampler::~Sampler()
-{
-    
 }

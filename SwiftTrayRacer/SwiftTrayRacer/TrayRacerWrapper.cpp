@@ -9,19 +9,17 @@
 #include "TrayRacerWrapper.h"
 #include "TrayRacer.h"
 #include "Film.h"
-#include "CustomSceneParser.h"
+#include "SceneParser.h"
 #include "SceneConfiguration.h"
-#include "SceneConfigurationFile.h"
+#include "SceneFile.h"
 
 std::shared_ptr<TrayRacer> racer;
 
 void createTrayRacer(const char* filePath) {
-	std::shared_ptr<Film> film(new Film(320, 240));
-	std::shared_ptr<CustomSceneParser> parser(new CustomSceneParser());
-	std::shared_ptr<SceneConfigurationFile> sceneConfigFile(new SceneConfigurationFile(filePath));
-	std::shared_ptr<const SceneConfiguration> sceneConfig = parser->parse(sceneConfigFile);
+	Film* film = new Film(320, 240);
+	TrayRacer* trayRacer = new TrayRacer(film);
 	
-	racer = std::make_shared<TrayRacer>(film);
+	racer = std::shared_ptr<TrayRacer>(trayRacer);
 }
 
 const unsigned char* getTrayRacerImage() {

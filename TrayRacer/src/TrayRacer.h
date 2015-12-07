@@ -17,17 +17,17 @@
 class TrayRacer {
     
 private:
-    std::shared_ptr<Film> mFilm;
+	Film* mFilm;
 
     int maxRecursionDepth;
         
 public:
-	TrayRacer(std::shared_ptr<Film> film);
+	TrayRacer(Film* film);
     virtual ~TrayRacer();
     
     uint8_t* render();
-    int width();
-    int height();
+    int width() const;
+    int height() const;
 };
 
 #endif /* defined(__TrayRacer__TrayRacer__) */

@@ -25,17 +25,17 @@ Film::~Film()
     
 }
 
-int Film::getWidth()
+int Film::getWidth() const
 {
     return screenWidth;
 }
 
-int Film::getHeight()
+int Film::getHeight() const
 {
     return screenHeight;
 }
 
-uint8_t* Film::getData()
+uint8_t* Film::getData() const
 {
     return pixels;
 }
