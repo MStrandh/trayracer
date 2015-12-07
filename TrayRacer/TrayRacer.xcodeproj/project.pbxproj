@@ -183,6 +183,7 @@
 		687C833A1BFCA84B00B83FC9 /* SceneFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687C83361BFCA84B00B83FC9 /* SceneFile.cpp */; };
 		687C833B1BFCA84B00B83FC9 /* SceneFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 687C83371BFCA84B00B83FC9 /* SceneFile.h */; };
 		687C835B1C076B7800B83FC9 /* ISceneFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 687C835A1C076B7800B83FC9 /* ISceneFile.h */; };
+		688AC8F71C16416600BD58ED /* SceneConfigurationTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 688AC8F61C16416600BD58ED /* SceneConfigurationTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -484,6 +485,7 @@
 		687C83371BFCA84B00B83FC9 /* SceneFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFile.h; sourceTree = "<group>"; };
 		687C835A1C076B7800B83FC9 /* ISceneFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISceneFile.h; sourceTree = "<group>"; };
 		687C835C1C0B6C2600B83FC9 /* fakeit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fakeit.hpp; sourceTree = "<group>"; };
+		688AC8F61C16416600BD58ED /* SceneConfigurationTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneConfigurationTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -523,6 +525,7 @@
 		6838512A1ABD808800B22C7D /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				688AC8F61C16416600BD58ED /* SceneConfigurationTest.cpp */,
 				683852BD1ABD866A00B22C7D /* SceneParserTest.cpp */,
 				683852EC1ABD876700B22C7D /* TrayRacersTests.cpp */,
 			);
@@ -1146,6 +1149,7 @@
 				687C83391BFCA84B00B83FC9 /* SceneFile.cpp in Sources */,
 				683852ED1ABD876700B22C7D /* TrayRacersTests.cpp in Sources */,
 				683852D51ABD870500B22C7D /* Film.cpp in Sources */,
+				688AC8F71C16416600BD58ED /* SceneConfigurationTest.cpp in Sources */,
 				683852E01ABD870500B22C7D /* Sampler.cpp in Sources */,
 				683852CC1ABD86B700B22C7D /* SceneParserTest.cpp in Sources */,
 			);

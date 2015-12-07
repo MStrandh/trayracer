@@ -16,14 +16,14 @@
 
 using namespace std;
 
-class CSceneFile : public ISceneFile {
+class SceneFile : public ISceneFile {
 private:
 	ifstream inputStream;
 	string outputString;
 	
 public:
-	CSceneFile(const char* filePath);
-	virtual ~CSceneFile();
+	SceneFile(const char* filePath);
+	virtual ~SceneFile();
 	
 	bool isEmpty() override;
 	string readLine() override;

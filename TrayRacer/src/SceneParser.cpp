@@ -10,17 +10,21 @@
 
 #include <iostream>
 
-CSceneParser::CSceneParser() {
+SceneParser::SceneParser() {
 }
 
-CSceneParser::~CSceneParser() {
+SceneParser::~SceneParser() {
 
 }
 
-const SceneConfiguration* CSceneParser::parse(ISceneFile& file) {
+const SceneConfiguration* SceneParser::parse(ISceneFile& file) {
 	SceneConfiguration* config = new SceneConfiguration();
 	
-	std::cout << "Line: " << file.readLine() << std::endl;
+	std::string currentLine = file.readLine();
+	
+	if(currentLine == "size 320 240") {
+		config->setDimension(320, 240);
+	}
 	
 	return config;
 }

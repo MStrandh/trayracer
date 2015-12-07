@@ -13,12 +13,18 @@
 
 class SceneConfiguration {
 	
+private:
+	int mSceneWidth;
+	int mSceneHeight;
+	
 public:
 	SceneConfiguration();
 	virtual ~SceneConfiguration();
 	
-	int getWidth() const { return 360; };
-	int getHeight() const { return 240; };
+	void setDimension(int width, int height);
+	
+	int getWidth() const;
+	int getHeight() const;
 };
 
 #endif /* SceneConfiguration_h */

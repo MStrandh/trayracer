@@ -8,19 +8,19 @@
 
 #include "SceneFile.h"
 
-CSceneFile::CSceneFile(const char* filePath) : inputStream(), outputString("") {
+SceneFile::SceneFile(const char* filePath) : inputStream(), outputString("") {
 	inputStream.open(filePath);
 }
 
-CSceneFile::~CSceneFile() {
+SceneFile::~SceneFile() {
 	
 }
 
-bool CSceneFile::isEmpty() {
+bool SceneFile::isEmpty() {
 	return inputStream.is_open();
 }
 
-string CSceneFile::readLine() {
+string SceneFile::readLine() {
 	getline (inputStream, outputString);
 	
 	return outputString;

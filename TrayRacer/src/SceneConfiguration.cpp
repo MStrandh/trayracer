@@ -8,10 +8,26 @@
 
 #include "SceneConfiguration.h"
 
-SceneConfiguration::SceneConfiguration() {
+SceneConfiguration::SceneConfiguration()
+	: mSceneWidth(0)
+	, mSceneHeight(0)
+{
 	
 }
 
 SceneConfiguration::~SceneConfiguration() {
 	
 }
+
+void SceneConfiguration::setDimension(int width, int height) {
+	mSceneWidth = width;
+	mSceneHeight = height;
+}
+
+int SceneConfiguration::getWidth() const {
+	return mSceneWidth;
+};
+
+int SceneConfiguration::getHeight() const {
+	return mSceneHeight;
+};

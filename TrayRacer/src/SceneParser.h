@@ -14,11 +14,11 @@
 #include "SceneConfiguration.h"
 #include "ISceneFile.h"
 
-class CSceneParser {
+class SceneParser {
 	
 public:
-	CSceneParser();
-	virtual ~CSceneParser();
+	SceneParser();
+	virtual ~SceneParser();
 	
 	const SceneConfiguration* parse(ISceneFile& file);
 };
