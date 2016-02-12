@@ -8,7 +8,7 @@
 
 #include "SceneParser.h"
 
-#include <iostream>
+#include <sstream>
 
 SceneParser::SceneParser() {
 }
@@ -17,13 +17,33 @@ SceneParser::~SceneParser() {
 
 }
 
+void SceneParser::parseSize(SceneConfiguration* config, stringstream& line) {
+	int width;
+	int height;
+	
+	line >> width;
+	line >> height;
+	
+	config->setDimension(width, height);
+}
+
 const SceneConfiguration* SceneParser::parse(ISceneFile& file) {
 	SceneConfiguration* config = new SceneConfiguration();
 	
-	std::string currentLine = file.readLine();
+	string currentLine;
+	string cmd;
 	
-	if(currentLine == "size 320 240") {
-		config->setDimension(320, 240);
+	while (file.canReadMore()) {
+		currentLine = file.readLine();
+		
+		//if (currentLine.find_first_not_of(" \t\r\n") != string::npos) {
+			stringstream strStream(currentLine);
+			strStream >> cmd;
+		
+			if(cmd == "size") {
+				parseSize(config, strStream);
+			}
+		//}
 	}
 	
 	return config;

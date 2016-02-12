@@ -22,29 +22,30 @@ public:
 	
 	~TestableSceneFile() {};
 	
-	bool isEmpty() {
+	bool isReady() {
 		return true;
 	};
+	
+	bool canReadMore() {
+		return true;
+	}
 	
 	std::string readLine() {
 		return "";
 	};
 };
 
-SCENARIO("scene file header can be parsed", "[SceneParser]") {
-	GIVEN("a valid scene file") {
-		WHEN("reading a size tag") {
-			Mock<TestableSceneFile> mock;
-		
-			When(Method(mock, readLine)).Return("size 320 240");
+TEST_CASE("scene file header can be parsed", "[SceneParser]") {
+	Mock<TestableSceneFile> mock;
+	SceneParser* parser = new SceneParser();
 
-			SceneParser* parser = new SceneParser();
-			const SceneConfiguration* sceneConfig = parser->parse(mock.get());
-			
-			THEN("the dimensions of the scene has changed") {
-				REQUIRE(sceneConfig->getWidth() == 320);
-				REQUIRE(sceneConfig->getHeight() == 240);
-			}
-		}
+	SECTION("the dimensions of the scene has changed") {
+		When(Method(mock, canReadMore)).Return(true, false);
+		When(Method(mock, readLine)).Return("size 320 240");
+		
+		const SceneConfiguration* sceneConfig = parser->parse(mock.get());
+		
+		REQUIRE(sceneConfig->getWidth() == 320);
+		REQUIRE(sceneConfig->getHeight() == 240);
 	}
 }

@@ -14,17 +14,13 @@
 using namespace std;
 using namespace fakeit;
 
-SCENARIO("a scene configuration can change scene properties", "[SceneConfiguration]") {
-	GIVEN("a newly created scene") {
-		SceneConfiguration* config = new SceneConfiguration();
-		
-		WHEN("the dimensions are changed") {
-			config->setDimension(320, 240);
+TEST_CASE("a scene configuration can change scene properties", "[SceneConfiguration]") {
+	SceneConfiguration* config = new SceneConfiguration();
 			
-			THEN("the width and the height of the scene is changed") {
-				REQUIRE(config->getWidth() == 320);
-				REQUIRE(config->getHeight() == 240);
-			}
-		}
+	SECTION("the width and the height of the scene is changed") {
+		config->setDimension(320, 240);
+				
+		REQUIRE(config->getWidth() == 320);
+		REQUIRE(config->getHeight() == 240);
 	}
 }

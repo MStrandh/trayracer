@@ -16,10 +16,17 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
 		let filePath = getPathForFileInBundle("scene1")
-        createTrayRacer(filePath)
+		
+		parseScene(filePath)
+        createTrayRacer()
 
-        let image = createImage(320, imageHeight: 240)
+		let imgWidth = Int(getImageWidth())
+		let imgHeight = Int(getImageHeight())
+		
+        let image = createImage(imgWidth, imageHeight: imgHeight)
         trayRacerImageView?.image = image
+		
+		view.frame = CGRectMake(0, 0, CGFloat(imgWidth), CGFloat(imgHeight))
     }
 
     override var representedObject: AnyObject? {

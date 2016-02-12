@@ -25,7 +25,8 @@ public:
 	SceneFile(const char* filePath);
 	virtual ~SceneFile();
 	
-	bool isEmpty() override;
+	bool isReady() override;
+	bool canReadMore() override;
 	string readLine() override;
 };
 

@@ -14,7 +14,8 @@ class ISceneFile {
 public:
 	virtual ~ISceneFile() {}
 	
-	virtual bool isEmpty() = 0;
+	virtual bool isReady() = 0;
+	virtual bool canReadMore() = 0;
 	virtual std::string readLine() = 0;
 };
 

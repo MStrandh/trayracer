@@ -14,7 +14,12 @@
 #include "SceneConfiguration.h"
 #include "ISceneFile.h"
 
+using namespace std;
+
 class SceneParser {
+	
+private:
+	void parseSize(SceneConfiguration* config, stringstream& line);
 	
 public:
 	SceneParser();

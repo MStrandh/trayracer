@@ -13,15 +13,29 @@
 #include "SceneConfiguration.h"
 #include "SceneFile.h"
 
-std::shared_ptr<TrayRacer> racer;
+TrayRacer* racer;
+const SceneConfiguration* config;
 
-void createTrayRacer(const char* filePath) {
-	Film* film = new Film(320, 240);
-	TrayRacer* trayRacer = new TrayRacer(film);
+void parseScene(const char* filePath) {
+	SceneFile file(filePath);
+	SceneParser* parser = new SceneParser();
 	
-	racer = std::shared_ptr<TrayRacer>(trayRacer);
+	config = parser->parse(file);
+}
+
+void createTrayRacer() {
+	Film* film = new Film(config->getWidth(), config->getHeight());
+	racer = new TrayRacer(film);
 }
 
 const unsigned char* getTrayRacerImage() {
     return racer->render();
+}
+
+int getImageWidth() {
+	return config->getWidth();
+}
+
+int getImageHeight() {
+	return config->getHeight();
 }

@@ -16,12 +16,16 @@ SceneFile::~SceneFile() {
 	
 }
 
-bool SceneFile::isEmpty() {
+bool SceneFile::isReady() {
 	return inputStream.is_open();
 }
 
+bool SceneFile::canReadMore() {
+	return inputStream.peek() != ifstream::traits_type::eof();
+}
+
 string SceneFile::readLine() {
-	getline (inputStream, outputString);
+	getline(inputStream, outputString);
 	
 	return outputString;
 }

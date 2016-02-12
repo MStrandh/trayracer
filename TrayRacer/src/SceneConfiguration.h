@@ -11,11 +11,17 @@
 
 #include <stdio.h>
 
+struct CameraConfiguration {
+	float fov;
+};
+
 class SceneConfiguration {
 	
 private:
 	int mSceneWidth;
 	int mSceneHeight;
+	
+	CameraConfiguration mCamera;
 	
 public:
 	SceneConfiguration();

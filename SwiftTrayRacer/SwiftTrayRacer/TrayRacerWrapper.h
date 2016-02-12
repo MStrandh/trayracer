@@ -12,9 +12,12 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-    void createTrayRacer(const char* filePath);
+	void parseScene(const char* filePath);
+    void createTrayRacer();
     const unsigned char* getTrayRacerImage();
+	
+	int getImageWidth();
+	int getImageHeight();
     
 #ifdef __cplusplus
 }
